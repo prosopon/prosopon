@@ -206,7 +206,8 @@
 		8944F768154782E50054A366 /* test */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = test;
+			name = test;
+			path = "prosopon-tests";
 			remoteRef = 8944F767154782E50054A366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -220,7 +221,8 @@
 		8944F7801547830E0054A366 /* test */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = test;
+			name = test;
+			path = "prosopon-interpreter-tests";
 			remoteRef = 8944F77F1547830E0054A366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

@@ -7,7 +7,7 @@ BISON = bison
 
 BISON_FLAGS = --debug -d
 LEX_FLAGS = -dv -ll
-CFLAGS = -std=c99 -g -I../prosopon-core/include -I../prosopon-interpreter/include -I./include -Isrc
+CFLAGS = -std=c99 -g -I./include -Isrc
 LFLAGS = -lprosopon -lprosopon-interpreter
 
 SRC_DIR = src

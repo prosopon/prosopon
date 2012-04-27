@@ -1,7 +1,7 @@
-#include "prosopon.h"
-#include "prosopon_interpreter.h"
+#include <prosopon/prosopon.h>
+#include <prosopon/prosopon_interpreter.h>
 
-#include "prosopon_interpreter_config.h"
+#include <prosopon/prosopon_interpreter_config.h>
 
 #include "pro_alloc.h"
 
@@ -150,7 +150,7 @@ int main(int argc, char** argv)
     // create pro_state for execution
     pro_state_ref state;
     if (pro_state_create(simple_alloc, &state) != PRO_OK)
-        return 0;
+        return -1;
     
     // create interpreter state
     pro_interpreter_state* istate = pro_interpreter_state_create(state);
@@ -175,10 +175,10 @@ int main(int argc, char** argv)
     // load standard library
     if (cl.load_standard_library)
     {
-        if (pro_process_library(istate, PRO_STDLIB_PATH))
-            return 0;
+        if (pro_process_library(istate, "/usr/local/lib/libprosopon-stdlib.dylib"))
+            return -1;
         if (load_stdlib_library(istate, PRO_STDLIB_PRO_PATH))
-            return 0;
+            return -1;
     }
     
     // load libraries

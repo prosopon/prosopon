@@ -1,7 +1,7 @@
 #include <prosopon/prosopon.h>
-#include <prosopon/prosopon_interpreter.h>
+#include <prosopon/interpreter.h>
 
-#include <prosopon/prosopon_interpreter_config.h>
+#include <prosopon/interpreter_config.h>
 
 #include "pro_alloc.h"
 

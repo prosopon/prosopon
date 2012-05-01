@@ -2,11 +2,7 @@ SHELL=/bin/bash
 
 CC = gcc
 LINK = gcc
-LEX = flex
-BISON = bison
 
-BISON_FLAGS = --debug -d
-LEX_FLAGS = -dv -ll
 CFLAGS = -std=c99 -g -I./include -Isrc
 LFLAGS = -lprosopon -lprosopon-interpreter
 
